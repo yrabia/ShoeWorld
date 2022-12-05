@@ -1,0 +1,39 @@
+td {
+    text-align:left ;
+    padding: 20px;
+}
+
+th {
+    text-align:left ;
+    padding: 20px;
+    background-color: lightcyan;
+}
+
+table {
+    background-color: lightblue;
+
+}
+
+.shoeworld {
+    padding-left:100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    align-self: center;
+
+}
+
+h1{
+    padding-left: 20px;
+}
+
+.buttonshoe {
+    padding: 20px;
+}
+
+.options {
+    padding-top: 15px;
+}
+
+.deletebutton {
+    color: red;
+}
