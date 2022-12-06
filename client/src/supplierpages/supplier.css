@@ -14,7 +14,15 @@ table {
 
 }
 
-.shoeworld {
+.supplierinfo {
+    padding-left:100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    align-self: center;
+
+}
+
+.supplierorders {
     padding-left:100px;
     padding-top: 10px;
     padding-bottom: 50px;
@@ -24,23 +32,4 @@ table {
 
 h1{
     padding-left: 20px;
-}
-
-.buttonshoe {
-    padding: 20px;
-}
-
-.options {
-    padding-top: 15px;
-}
-
-.deletebutton {
-    color: red;
-}
-
-.customerpage {
-    padding-left:100px;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    align-self: center;
 }

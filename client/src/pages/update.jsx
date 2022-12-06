@@ -29,7 +29,7 @@ const Update = () => {
         e.preventDefault();
         try {
             await axios.put (`http://localhost:8800/inventory/${shoeId}`, inventory)
-            navigate("/")
+            navigate("/inventory")
         }catch (err) {
             console.log (err); 
             setError(true)
@@ -48,7 +48,7 @@ const Update = () => {
             <input type = "text" placeholder='quantity recommended' onChange={handleChange} name = "QUANTITY_RECOMMENDED"/>
             <button onClick={handleClick}>Set Changes</button>
             {error &&  "There is an error"}
-            <div><Link to="/">Back to Inventory</Link></div>
+            <div><Link to="/inventory">Back to Inventory</Link></div>
         </div>
     )
 }
