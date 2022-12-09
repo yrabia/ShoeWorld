@@ -1,0 +1,129 @@
+insert into inventory (shoe_id, shoe_name, shoe_cost, shoe_price, quantity_on_hand, quantity_on_order, quantity_recommended) values 
+("1", "Shoology", "23", "25", "500", "500", "800"), 
+("2", "King Shoes", "26", "30", "500", "500", "800"), 
+("3", "Queen Shoes", "26", "30", "500", "500", "800"), 
+("4", "Icon Shoes", "30", "40", "550", "550", "800"), 
+("5", "Shoegy", "40", "45", "400", "400", "600"), 
+("6", "Retro boots", "44", "50", "400", "400", "600"), 
+("7", "Forza", "60", "60", "400", "400", "600"), 
+("8", "FSRT", "60", "60", "500", "500", "800"), 
+("9", "Heritage", "15", "25", "500", "500", "800"), 
+("10", "Bootloose", "80", "100", "500", "500", "500"), 
+("11", "Shoester", "90", "205", "500", "500", "500"), 
+("12", "Urban Design", "15", "25", "300", "500", "800"), 
+("13", "Comfy Walk", "45", "65", "200", "500", "800"), 
+("14", "Fimbs", "50", "55", "300", "500", "400"), 
+("15", "Planet51", "65", "75", "500", "500", "600"), 
+("16", "Skyforce", "65", "75", "400", "500", "600"), 
+("17", "FNEFE", "65", "75", "100", "500", "800");
+
+
+insert into shoe_types (shoe_id, shoe_type) values
+("1", "Sneakers"), 
+("2", "Sneakers"), 
+("3", "Sandals"), 
+("4", "Sandals"), 
+("5", "Slippers"), 
+("6", "Boots"), 
+("7", "Slippers"), 
+("8", "Sneakers"),
+("9", "Loafers"), 
+("10", "Loafers"), 
+("11", "Sneakers"), 
+("12", "Boots"), 
+("13", "Boots"), 
+("14", "Sandals"), 
+("15", "Sneakers"), 
+("16", "Boots"), 
+("17", "Loafers");
+
+
+insert into supplier (supplier_id, supplier_name, supplier_address, supplier_zip, supplier_phone) values
+
+("1", "Fancy Feet", "3434 Brook Mission", "12345", "1084538585"),
+("2", "Sneaker World", "2456 Boyer St", "23145", "1084532974"),
+("3", "The Shoe Store", "6540 E.Fowl Lane", "43467", "2086578585"),
+("4", "More Footwear", "5782 Ocean Avenue", "65665", "1085775775");
+
+insert into supplier_invoice (invoice_id, supplier_id, invoice_date) values
+("1", "1", "23/11/2022"),
+("2", "1", "04/12/2022"),
+("3", "1","27/11/2022"),
+("4", "2", "20/11/2022"),
+("5", "2", "01/12/2022"),
+("6", "2", "28/11/2022"),
+("7", "2", "30/11/2022"),
+("8", "2", "26/11/2022"),
+("9", "3", "21/11/2022"),
+("10", "3", "02/12/2022"),
+("11", "4", "03/12/2022"),
+("12", "4", "22/11/2022");
+
+
+insert into supplier_invoice_info (invoice_id, shoe_id, quantity) values
+("1", "2", "500"),
+("1", "16", "500"),
+("2", "1", "500"),
+("3", "11","500"),
+("4", "2", "500"),
+("4", "8", "500"),
+("5", "2", "500"),
+("6", "3", "500"),
+("7", "4", "550"),
+("7", "5", "400"),
+("8", "12", "500"),
+("9", "3", "500"),
+("10", "13", "500"),
+("10", "1", "500"),
+("11", "14", "500"),
+("12", "4", "550")
+
+
+
+insert into customer (customer_id, customer_name, customer_address, customer_zip, customer_phone) values
+("1", "Stella Douglas", "44624 Maci Trail", "45783", "1082648282"),
+("2", "Maya Thompson", "2219 Allie Point", "46789", "2087673232"),
+("3", "Edgar Gibson", "05566 Mylene Mountain", "45783", "2086270184"),
+("4", "Jasmine Gray", "498 Jast Mill", "49153", "1083791782"),
+("5", "Justin Taylor",	"6039 Wehner Haven", "45783", "1230138383"),
+("6", "Dominik Fowler",	"137 Haley Wells", "48301", "1820164503"),
+("7", "Owen Stevens",	"7464 Jast Points", "57920", "1461089393"),
+("8", "Martin Holmes", "4519 Shanny Overpass", "84092", "0958901919"),
+("9", "Hailey Mason",	"7974 Dahlia Field", "84092", "1114358290"),
+("10", "Ned Cameron",	"4178 Rylee Place", "84092", "1921024957"),
+("11", "Vanessa Edwards",	"014 Tromp Parkway", "43434", "1224446666"),
+("12", "Tony Dixon", "6825 Pagac Causeway", "44444", "2121212121"),
+("13", "Arnold Martin", "80954 Alfreda Ways", "44444", "1801681734"),
+("14", "Alan Cooper", "41923 Briana Locks", "40328", "1092348920"),
+("15", "Adrian Alexander", "930 Breitenberg Corners", "43454", "1423456565");
+
+
+
+insert into customer_order (order_id, customer_id, order_date) values
+("1", "1", "27/11/2022"),
+("2", "12", "23/11/2022"),
+("3", "11","01/12/2022"),
+("4", "2", "28/11/2022"),
+("5", "2", "30/11/2022"),
+("6", "6", "24/11/2022"),
+("7", "5", "04/12/2022"),
+("8", "7", "20/11/2022"),
+("9", "3", "21/11/2022"),
+("10", "13", "29/11/2022"),
+("11", "14", "25/11/2022"),
+("12", "8", "02/12/2022");
+
+
+insert into customer_order_info (order_id, shoe_id, quantity) values
+("1", "16", "1"),
+("2", "12", "1"),
+("3", "11","1"),
+("4", "2", "4"),
+("5", "2", "20"),
+("6", "4", "1"),
+("7", "5", "2"),
+("8", "7", "3"),
+("9", "3", "1"),
+("10", "17", "5"),
+("11", "14", "1"),
+("12", "8", "15");
